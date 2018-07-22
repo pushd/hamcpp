@@ -10,4 +10,6 @@ Gem::Specification.new do |s|
   s.extensions << "ext/hamcpp/extconf.rb"
   s.add_development_dependency 'rake-compiler', '~> 1.0', '>= 1.0.1'
   s.add_development_dependency 'rice', '~> 2.1', '>= 2.1.2'
+  s.add_dependency 'rake-compiler', '~> 1.0', '>= 1.0.1'
+  s.add_dependency 'rice', '~> 2.1', '>= 2.1.2'
 end
