@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hamcpp (1.0.2)
+    hamcpp (1.0.4)
       rake-compiler (~> 1.0, >= 1.0.1)
       rice (~> 2.1, >= 2.1.2)
 
