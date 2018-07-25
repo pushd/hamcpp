@@ -1,11 +1,12 @@
 Gem::Specification.new do |s|
   s.name    = "hamcpp"
-  s.version = "1.0.1"
+  s.version = "1.0.2"
   s.summary = "C++ Optimized Hamming Distance for Ruby"
   s.author  = "Alek Kolcz"
 
   s.files = %w[lib/hamcpp.rb]
   s.extensions = %w[ext/hamcpp/extconf.rb]
+  s.require_paths = %w[lib]
 
   s.add_development_dependency 'hoe', '~> 3.17.0', '>= 3.17.0'
   s.add_development_dependency 'rake-compiler', '~> 1.0', '>= 1.0.1'
