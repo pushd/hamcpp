@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name    = "hamcpp"
-  s.version = "1.0.0"
+  s.version = "1.0.1"
   s.summary = "C++ Optimized Hamming Distance for Ruby"
   s.author  = "Alek Kolcz"
 
