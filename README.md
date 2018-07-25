@@ -62,6 +62,15 @@ Linux (linpopcount might not build on OSX)
  *  sudo gem build hamcpp.gemspec
  *  sudo gem install hamcpp-1.0.0.gem
 
+== PUBLISH:
+
+Add the gemfury source as git remote (account in 1Password or ask for collaborator access)
+
+`git remote add fury <gemfury-url>`
+
+Then update the version number in hamcpp.rb and hamcpp.gemspec and publish
+
+`git push fury master`
 
 == CREDITS:
 
