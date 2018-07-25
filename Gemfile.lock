@@ -1,0 +1,28 @@
+PATH
+  remote: .
+  specs:
+    hamcpp (1.0.4)
+      rake-compiler (~> 1.0, >= 1.0.1)
+      rice (~> 2.1, >= 2.1.2)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    hoe (3.17.0)
+      rake (>= 0.8, < 13.0)
+    minitest (5.11.3)
+    rake (12.3.1)
+    rake-compiler (1.0.4)
+      rake
+    rice (2.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  hamcpp!
+  hoe (~> 3.17.0, >= 3.17.0)
+  minitest (~> 5.11.3, >= 5.11.3)
+
+BUNDLED WITH
+   1.16.1

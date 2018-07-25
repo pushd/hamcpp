@@ -1,21 +1,16 @@
-hamcpp
-==========
+= hamcpp
 
-
-DESCRIPTION:
-------------
+== DESCRIPTION:
 
 Wrapper around fast (SSE based) Hamming distance routines using the [libpopcnt](https://github.com/kimwalisch/libpopcnt) C++ library.
 
-FEATURES/PROBLEMS:
-------------------
+== FEATURES/PROBLEMS:
 
  - computation of Hamming distance between two string packed bitarrays
  - optimization if strings are multiples of 8 bytes long (ie bitarrays multiples of 64 bits)
  - binding pairs of strings in a array whose Hammings distance does not exceed a given threshols
 
-SYNOPSIS:
----------------
+== SYNOPSIS:
 
 ##Given a pair of bitvectors compute their Hamming distance
 ```
@@ -55,14 +50,11 @@ SYNOPSIS:
 ```
 ###When  bitvector bitlengths are multiples of 64, *hamloop64* should be used in place of *hamloop* for better performance.
 
-REQUIREMENTS:
---------------
+== REQUIREMENTS:
 
 Linux (linpopcount might not build on OSX)
 
-
-INSTALL:
-------------
+== INSTALL:
 
  *  sudo gem install rake-compiler hoe rice
  *  rake compile
@@ -70,9 +62,17 @@ INSTALL:
  *  sudo gem build hamcpp.gemspec
  *  sudo gem install hamcpp-1.0.0.gem
 
+== PUBLISH:
 
-CREDITS:
-------------
+Add the gemfury source as git remote (account in 1Password or ask for collaborator access)
+
+`git remote add fury <gemfury-url>`
+
+Then update the version number in hamcpp.rb and hamcpp.gemspec and publish
+
+`git push fury master`
+
+== CREDITS:
 
  *  libpopcnt is licensed under BSD 2-Clause License
 
