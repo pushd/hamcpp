@@ -191,12 +191,16 @@ Object hamcpp_array_hamming(Object self, Array a, Object th) {
            }
            uint64_t dist =  popcnt((const void*) &buf[0], buf.size());
            if (dist <= threshold) {
+            try {
               Array tmp;
               tmp.push((int) dist);
               tmp.push((int) a_idx);
               tmp.push((int) b_idx);
               result_tab.push(tmp);
-              std::cerr << dist << "  " << a_idx << "  " << b_idx << std::endl;
+            } catch (...) {
+              throw Exception(rb_eRuntimeError, "Unable to allocate Ruby array");
+            }
+              //std::cerr << dist << "  " << a_idx << "  " << b_idx << std::endl;
            }
            sum_dist += dist;
          }
