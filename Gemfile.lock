@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hamcpp (1.0.1)
+    hamcpp (1.0.2)
       rake-compiler (~> 1.0, >= 1.0.1)
       rice (~> 2.1, >= 2.1.2)
 
@@ -23,8 +23,6 @@ DEPENDENCIES
   hamcpp!
   hoe (~> 3.17.0, >= 3.17.0)
   minitest (~> 5.11.3, >= 5.11.3)
-  rake-compiler (~> 1.0, >= 1.0.1)
-  rice (~> 2.1, >= 2.1.2)
 
 BUNDLED WITH
    1.16.1
