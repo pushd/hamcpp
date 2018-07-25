@@ -196,6 +196,7 @@ Object hamcpp_array_hamming(Object self, Array a, Object th) {
               tmp.push((int) a_idx);
               tmp.push((int) b_idx);
               result_tab.push(tmp);
+              std::cerr << dist << "  " << a_idx << "  " << b_idx << std::endl;
            }
            sum_dist += dist;
          }
