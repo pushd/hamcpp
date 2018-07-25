@@ -1,0 +1,7 @@
+.autotest
+History.txt
+Manifest.txt
+README.md
+Rakefile
+lib/hamcpp.rb
+test/test_hamcpp.rb
