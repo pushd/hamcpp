@@ -64,13 +64,7 @@ Linux (linpopcount might not build on OSX)
 
 == PUBLISH:
 
-Add the gemfury source as git remote (account in 1Password or ask for collaborator access)
-
-`git remote add fury <gemfury-url>`
-
-Then update the version number in hamcpp.rb and hamcpp.gemspec and publish
-
-`git push fury master`
+This gem is hosted on Gemfury under the pushdinc organization. Ask EJ or Ben for access to the org, and follow instructions here: https://gemfury.com/help/git-push-package/
 
 == CREDITS:
 
